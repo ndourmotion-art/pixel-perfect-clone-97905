@@ -14,9 +14,6 @@ export const Hero = () => {
           <span className="block">Moving brands</span>
           <span className="block">
             <span className="text-primary">forward</span>
-            <span className="font-serif-italic text-foreground/80 text-[0.55em] align-middle ml-4 lowercase tracking-normal">
-              across africa & beyond
-            </span>
           </span>
         </h1>
 
