@@ -11,7 +11,7 @@ export const LogoMarquee = () => {
         {row.map((name, i) => (
           <span
             key={i}
-            className="font-display uppercase text-3xl md:text-4xl text-foreground/55 hover:text-foreground transition-colors"
+            className="font-display uppercase text-3xl md:text-4xl font-sans text-foreground/55 hover:text-foreground transition-colors"
           >
             {name}
             <span className="mx-8 text-accent">✦</span>
