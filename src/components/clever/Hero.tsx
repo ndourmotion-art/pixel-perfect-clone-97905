@@ -1,4 +1,13 @@
+import { useEffect, useState } from "react";
 import { useReveal } from "@/hooks/useReveal";
+
+const slides = [
+  "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1800&q=80",
+  "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1800&q=80",
+  "https://images.unsplash.com/photo-1605548109048-39b6e2424d8c?auto=format&fit=crop&w=1800&q=80",
+  "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1800&q=80",
+  "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1800&q=80",
+];
 
 export const Hero = () => {
   const ref = useReveal<HTMLDivElement>();
