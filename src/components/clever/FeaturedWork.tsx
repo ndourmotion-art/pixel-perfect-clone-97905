@@ -48,9 +48,8 @@ const projects: Project[] = [
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const ref = useReveal<HTMLAnchorElement>();
-  const colSpan =
-    project.span === "lg" ? "md:col-span-7" : project.span === "md" ? "md:col-span-5" : "md:col-span-6";
-  const aspect = project.span === "lg" ? "aspect-[16/10]" : "aspect-[4/3]";
+  const colSpan = "md:col-span-6";
+  const aspect = "aspect-[4/3]";
   return (
     <a
       ref={ref}
