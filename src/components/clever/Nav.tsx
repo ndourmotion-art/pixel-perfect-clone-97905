@@ -44,13 +44,6 @@ export const Nav = () => {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-2.5 text-sm font-medium hover:bg-primary transition-colors"
-        >
-          Get a quote
-          <span aria-hidden>→</span>
-        </a>
 
         <button
           onClick={() => setOpen((v) => !v)}
