@@ -4,40 +4,57 @@ const services = [
   {
     no: "01",
     title: "Brand Activation",
+    description:
+      "Nous donnons vie aux marques par des stratégies marketing percutantes et un positionnement clair qui captive votre audience cible.",
     items: ["Stratégie marketing", "Positionnement de marque", "Digital marketing"],
   },
   {
     no: "02",
     title: "Brand Identity",
+    description:
+      "Une identité visuelle forte et cohérente, pensée pour exprimer la personnalité unique de votre marque à travers tous les points de contact.",
     items: ["Art direction", "Interactive design", "Brand guidelines"],
   },
   {
     no: "03",
     title: "Vidéographie",
+    description:
+      "Des récits visuels immersifs, du scénario à la réalisation, pour transmettre vos messages avec émotion et impact.",
     items: ["Storytelling", "Scénario", "Réalisation", "Conception rédaction"],
   },
   {
     no: "04",
     title: "Dynamic Content",
+    description:
+      "Contenus dynamiques mêlant 3D, motion design et intelligence artificielle pour créer des expériences visuelles à la pointe.",
     items: ["3D design & rendering", "Motion design", "AI generated video", "AI imagery & compositing"],
   },
 ];
 
-const Row = ({ s, i }: { s: typeof services[number]; i: number }) => {
+const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
   const ref = useReveal<HTMLDivElement>();
   return (
     <div
       ref={ref}
-      className="reveal group border-t border-foreground/15 py-10 md:py-14 grid md:grid-cols-12 gap-6 items-start hover:bg-foreground/[0.03] transition-colors px-2 -mx-2 rounded-lg"
+      className="reveal group aspect-square flex flex-col justify-between p-8 md:p-10 border border-surface-dark-foreground/15 rounded-2xl hover:bg-foreground/[0.04] transition-colors"
       style={{ transitionDelay: `${i * 60}ms` }}
     >
-      <div className="md:col-span-2 eyebrow text-foreground/50">{s.no}</div>
-      <h3 className="md:col-span-6 font-display uppercase text-5xl md:text-7xl leading-[0.9] group-hover:text-primary transition-colors">
-        {s.title}
-      </h3>
-      <ul className="md:col-span-4 space-y-2 text-base md:text-lg text-foreground/75">
+      <div className="flex items-start justify-between">
+        <div className="eyebrow text-surface-dark-foreground/50">{s.no}</div>
+      </div>
+
+      <div>
+        <h3 className="font-display uppercase text-4xl md:text-5xl leading-[0.95] group-hover:text-primary transition-colors">
+          {s.title}
+        </h3>
+        <p className="mt-4 text-sm md:text-base text-surface-dark-foreground/70 leading-relaxed">
+          {s.description}
+        </p>
+      </div>
+
+      <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-surface-dark-foreground/75">
         {s.items.map((it) => (
-          <li key={it} className="flex items-start gap-3">
+          <li key={it} className="flex items-start gap-2">
             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
             {it}
           </li>
@@ -63,9 +80,9 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="border-b border-surface-dark-foreground/15">
+        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
           {services.map((s, i) => (
-            <Row key={s.title} s={s} i={i} />
+            <Card key={s.title} s={s} i={i} />
           ))}
         </div>
       </div>
