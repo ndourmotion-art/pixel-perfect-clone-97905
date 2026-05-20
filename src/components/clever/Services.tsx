@@ -36,7 +36,7 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
   return (
     <div
       ref={ref}
-      className="reveal group aspect-square flex flex-col justify-between p-8 md:p-10 border border-surface-dark-foreground/15 rounded-2xl hover:bg-foreground/[0.04] transition-colors"
+      className="reveal group aspect-square flex flex-col justify-between p-5 md:p-6 border border-surface-dark-foreground/15 rounded-2xl hover:bg-foreground/[0.04] transition-colors"
       style={{ transitionDelay: `${i * 60}ms` }}
     >
       <div className="flex items-start justify-between">
