@@ -68,7 +68,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </div>
       <div className="mt-5 flex items-start justify-between gap-6">
         <div>
-          <h3 className="font-display uppercase text-3xl md:text-4xl">{project.title}</h3>
+          <h3 className="font-display uppercase text-3xl md:text-4xl font-sans">{project.title}</h3>
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-foreground/60">
             {project.tags.map((t) => (
               <span key={t}>{t}</span>
@@ -91,7 +91,7 @@ export const FeaturedWork = () => {
         <div ref={heading} className="reveal flex items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
             <div className="eyebrow text-foreground/60 mb-4">( Selected Work )</div>
-            <h2 className="font-display uppercase text-display-lg">Featured projects</h2>
+            <h2 className="font-display uppercase text-display-lg font-sans">Featured projects</h2>
           </div>
           <a
             href="#work"

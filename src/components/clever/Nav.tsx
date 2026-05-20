@@ -32,7 +32,7 @@ export const Nav = () => {
           <img src={logo} alt="Cleverafrica" className="h-7 md:h-8 w-auto" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-1 rounded-full border border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5">
+        <nav className="hidden md:flex items-center gap-1 rounded-full border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5 bg-slate-700 border-2 opacity-85">
           {links.map((l) => (
             <a
               key={l.href}
