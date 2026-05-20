@@ -36,7 +36,7 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
   return (
     <div
       ref={ref}
-      className="reveal group aspect-square flex flex-col justify-between p-8 md:p-10 border border-surface-dark-foreground/15 rounded-2xl hover:bg-foreground/[0.04] transition-colors"
+      className="reveal group aspect-square flex flex-col justify-between p-5 md:p-6 border border-surface-dark-foreground/15 rounded-2xl hover:bg-foreground/[0.04] transition-colors"
       style={{ transitionDelay: `${i * 60}ms` }}
     >
       <div className="flex items-start justify-between">
@@ -44,15 +44,15 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
       </div>
 
       <div>
-        <h3 className="font-display uppercase text-4xl md:text-5xl leading-[0.95] group-hover:text-primary transition-colors">
+        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] group-hover:text-primary transition-colors">
           {s.title}
         </h3>
-        <p className="mt-4 text-sm md:text-base text-surface-dark-foreground/70 leading-relaxed">
+        <p className="mt-3 text-xs md:text-sm text-surface-dark-foreground/70 leading-relaxed">
           {s.description}
         </p>
       </div>
 
-      <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-surface-dark-foreground/75">
+      <ul className="grid grid-cols-1 gap-y-1 text-xs text-surface-dark-foreground/75">
         {s.items.map((it) => (
           <li key={it} className="flex items-start gap-2">
             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
@@ -80,7 +80,7 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-5xl mx-auto">
           {services.map((s, i) => (
             <Card key={s.title} s={s} i={i} />
           ))}
