@@ -11,6 +11,16 @@ const slides = [
 
 export const Hero = () => {
   const ref = useReveal<HTMLDivElement>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrent((c) => (c + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(id);
+  }, []);
+
+
   return (
     <section id="top" className="relative pt-36 md:pt-44 pb-16 md:pb-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
