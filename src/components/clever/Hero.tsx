@@ -11,19 +11,19 @@ export const Hero = () => {
         </div>
 
         <h1 className="font-display uppercase text-display-xl tracking-tight">
-          <span className="block font-sans font-bold text-center text-9xl">Moving brands</span>
-          <span className="block font-sans font-bold text-center text-9xl">
-            <span className="text-primary font-sans font-bold text-center">forward</span>
+          <span className="block font-sans font-bold text-center text-8xl">Moving brands</span>
+          <span className="block font-sans font-bold text-center text-8xl">
+            <span className="text-primary font-sans font-bold text-center text-8xl">forward</span>
           </span>
         </h1>
 
         <div className="mt-12 md:mt-16 grid md:grid-cols-12 gap-8 items-end">
-          <p className="md:col-span-6 text-lg md:text-xl text-foreground/75 max-w-xl leading-relaxed">
+          <p className="md:col-span-6 text-lg md:text-xl text-foreground/75 max-w-xl leading-relaxed text-center">
             A creative studio building bold brand systems, motion, video and
             AI-powered content for ambitious teams shaping the next decade.
           </p>
 
-          <div className="md:col-span-6 flex flex-wrap gap-3 md:justify-end">
+          <div className="md:col-span-6 flex-wrap gap-3 flex-row flex items-center md:justify-center">
             <a
               href="#work"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground text-background pl-6 pr-2 py-2 text-sm md:text-base font-medium hover:bg-primary transition-colors"

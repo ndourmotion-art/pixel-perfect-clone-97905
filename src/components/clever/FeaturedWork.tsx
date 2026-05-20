@@ -91,7 +91,7 @@ export const FeaturedWork = () => {
         <div ref={heading} className="reveal flex items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
             <div className="eyebrow text-foreground/60 mb-4">( Selected Work )</div>
-            <h2 className="font-display uppercase text-display-lg font-sans text-7xl">Featured projects</h2>
+            <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">Featured projects</h2>
           </div>
           <a
             href="#work"
