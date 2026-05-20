@@ -64,7 +64,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition-opacity shadow rounded-none opacity-85" />
       </div>
       <div className="mt-5 flex items-start justify-between gap-6">
         <div>
@@ -91,7 +91,7 @@ export const FeaturedWork = () => {
         <div ref={heading} className="reveal flex items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
             <div className="eyebrow text-foreground/60 mb-4">( Selected Work )</div>
-            <h2 className="font-display uppercase text-display-lg font-sans">Featured projects</h2>
+            <h2 className="font-display uppercase text-display-lg font-sans text-7xl">Featured projects</h2>
           </div>
           <a
             href="#work"

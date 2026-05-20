@@ -24,7 +24,7 @@ export const Nav = () => {
     <header
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-500",
-        scrolled ? "py-3 backdrop-blur-md bg-background/75 border-b border-foreground/5" : "py-6 bg-transparent"
+        scrolled ? "fixed top-0 inset-x-0 z-50 transition-all duration-500 backdrop-blur-md bg-background/75 border-b border-foreground/5 py-[18px] border-2 border-zinc-800" : "py-6 bg-transparent"
       )}
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center justify-between gap-6">
