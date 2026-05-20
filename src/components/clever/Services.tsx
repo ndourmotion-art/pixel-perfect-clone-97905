@@ -80,7 +80,7 @@ export const Services = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-5xl mx-auto">
           {services.map((s, i) => (
             <Card key={s.title} s={s} i={i} />
           ))}
