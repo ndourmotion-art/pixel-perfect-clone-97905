@@ -8,7 +8,7 @@ export const ContactCTA = () => {
         <div className="eyebrow text-surface-dark-foreground/60 mb-6">( Let's build )</div>
         <h2 className="font-display uppercase text-display-xl leading-[0.85]">
           Contact <br />
-          <span className="text-primary">us</span>
+          <span className="text-primary font-sans font-bold text-center">us</span>
           <span className="font-serif-italic normal-case text-surface-dark-foreground/80 text-[0.5em] align-top ml-2">
             today
           </span>
