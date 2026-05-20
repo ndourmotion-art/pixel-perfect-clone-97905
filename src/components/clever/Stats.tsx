@@ -18,7 +18,7 @@ export const Stats = () => {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={ref} className="reveal">
           <div className="eyebrow text-foreground/60 mb-5">( About the studio )</div>
-          <h2 className="font-display uppercase text-display-lg font-sans text-7xl max-w-4xl">
+          <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium max-w-4xl">
             Numbers that <span className="font-serif-italic normal-case text-primary">speak</span> loudly.
           </h2>
         </div>
