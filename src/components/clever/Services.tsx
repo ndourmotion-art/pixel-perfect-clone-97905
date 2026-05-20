@@ -44,15 +44,15 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
       </div>
 
       <div>
-        <h3 className="font-display uppercase text-4xl md:text-5xl leading-[0.95] group-hover:text-primary transition-colors">
+        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] group-hover:text-primary transition-colors">
           {s.title}
         </h3>
-        <p className="mt-4 text-sm md:text-base text-surface-dark-foreground/70 leading-relaxed">
+        <p className="mt-3 text-xs md:text-sm text-surface-dark-foreground/70 leading-relaxed">
           {s.description}
         </p>
       </div>
 
-      <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-surface-dark-foreground/75">
+      <ul className="grid grid-cols-1 gap-y-1 text-xs text-surface-dark-foreground/75">
         {s.items.map((it) => (
           <li key={it} className="flex items-start gap-2">
             <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
