@@ -52,7 +52,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-16 md:mt-20 relative aspect-[16/7] w-full overflow-hidden rounded-2xl bg-muted">
+        <div className="mt-16 md:mt-20 relative aspect-[16/9] md:aspect-[21/9] w-full min-h-[60vh] md:min-h-[80vh] overflow-hidden rounded-2xl bg-muted">
           {slides.map((src, i) => (
             <img
               key={src}
