@@ -24,15 +24,11 @@ export const Hero = () => {
   return (
     <section id="top" className="relative pt-36 md:pt-44 pb-16 md:pb-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-        <div ref={ref} className="reveal flex items-center gap-3 mb-10 md:mb-14">
-          <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-          <span className="eyebrow text-foreground/70 text-2xl bg-slate-50 text-stone-950">We are Clever africa</span>
-        </div>
+        <div ref={ref} className="reveal mb-10 md:mb-14" />
 
         <h1 className="font-display uppercase text-display-xl tracking-tight">
-          <span className="block font-sans font-bold text-center text-8xl">Moving brands</span>
-          <span className="block font-sans font-bold text-center text-8xl">
-            <span className="text-primary font-sans font-bold text-center text-8xl">forward</span>
+          <span className="block font-sans font-bold text-center text-7xl md:text-8xl whitespace-nowrap">
+            Moving brands <span className="text-primary">forward</span>
           </span>
         </h1>
 
