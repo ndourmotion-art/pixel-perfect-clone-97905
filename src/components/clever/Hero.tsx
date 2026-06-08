@@ -36,13 +36,8 @@ export const Hero = () => {
           </span>
         </h1>
 
-        <div className="mt-12 md:mt-16 grid md:grid-cols-12 gap-8 items-end">
-          <p className="md:col-span-6 text-lg md:text-xl text-foreground/75 max-w-xl leading-relaxed text-center px-0 py-0 mx-0 my-0">
-            A creative studio building bold brand systems, motion, video and
-            AI-powered content for ambitious teams shaping the next decade.
-          </p>
-
-          <div className="md:col-span-6 flex-wrap items-center md:justify-center flex flex-row gap-[50px] font-normal text-base">
+        <div className="mt-12 md:mt-16 grid md:grid-cols-12 gap-8 items-end md:justify-center">
+          <div className="md:col-span-12 flex-wrap items-center justify-center flex flex-row gap-[50px] font-normal text-base">
             <a
               href="#work"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground text-background pl-6 pr-2 py-2 md:text-base font-medium hover:bg-primary transition-colors text-base"
