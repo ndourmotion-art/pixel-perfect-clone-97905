@@ -12,12 +12,12 @@ export const Hero = () => {
         <div ref={ref} className="reveal mb-8 md:mb-10" />
 
         <h1 className="font-display uppercase tracking-tight">
-          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[14vw] md:text-[12vw]">
+          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[10vw] md:text-[8vw]">
             Moving brands <span className="text-primary">forward</span>
           </span>
         </h1>
 
-        <div className="mt-8 md:mt-12 relative aspect-[21/9] w-full overflow-hidden rounded-2xl bg-muted">
+        <div className="mt-10 md:mt-16 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-muted">
           <img
             src={heroImage}
             alt="Clever Africa hero"
