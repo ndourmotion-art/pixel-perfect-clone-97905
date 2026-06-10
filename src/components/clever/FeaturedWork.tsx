@@ -1,62 +1,16 @@
+import { Link } from "react-router-dom";
 import { useReveal } from "@/hooks/useReveal";
-
-type Project = {
-  title: string;
-  tags: string[];
-  image: string;
-  span: "lg" | "md" | "sm";
-};
-
-const projects: Project[] = [
-  {
-    title: "Sahara Bloom",
-    tags: ["Brand Identity", "Art Direction"],
-    image: "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1600&q=80",
-    span: "lg",
-  },
-  {
-    title: "Lagos Pulse",
-    tags: ["Motion Design", "3D Rendering"],
-    image: "https://images.unsplash.com/photo-1605548109048-39b6e2424d8c?auto=format&fit=crop&w=1200&q=80",
-    span: "md",
-  },
-  {
-    title: "Kente Kinetics",
-    tags: ["Brand Activation", "Video"],
-    image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=80",
-    span: "md",
-  },
-  {
-    title: "Nairobi Node",
-    tags: ["Digital Marketing", "Web"],
-    image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80",
-    span: "lg",
-  },
-  {
-    title: "Atlas Reverie",
-    tags: ["AI Imagery", "Compositing"],
-    image: "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1200&q=80",
-    span: "sm",
-  },
-  {
-    title: "Marrakech Loop",
-    tags: ["Storytelling", "Realisation"],
-    image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80",
-    span: "sm",
-  },
-];
+import { projects, type Project } from "@/data/projects";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const ref = useReveal<HTMLAnchorElement>();
-  const colSpan = "md:col-span-6";
-  const aspect = "aspect-[4/3]";
   return (
-    <a
+    <Link
       ref={ref}
-      href="#work"
-      className={`reveal group block ${colSpan}`}
+      to={`/work/${project.slug}`}
+      className="reveal group block md:col-span-6"
     >
-      <div className={`relative ${aspect} overflow-hidden rounded-2xl bg-muted`}>
+      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
         <img
           src={project.image}
           alt={project.title}
@@ -78,7 +32,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           ↗
         </span>
       </div>
-    </a>
+    </Link>
   );
 };
 
