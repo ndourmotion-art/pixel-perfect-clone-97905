@@ -12,7 +12,7 @@ export const Hero = () => {
         <div ref={ref} className="reveal mb-8 md:mb-10" />
 
         <h1 className="font-display uppercase tracking-tight">
-          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[14vw] md:text-[12vw]">
+          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[10vw] md:text-[8vw]">
             Moving brands <span className="text-primary">forward</span>
           </span>
         </h1>
