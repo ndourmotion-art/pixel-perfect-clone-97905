@@ -107,6 +107,38 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=1600&q=80",
     ],
   },
+  {
+    slug: "project-g",
+    title: "Project G",
+    tags: ["Editorial", "Print"],
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    client: "Confidential",
+    year: "2024",
+    role: "Editorial Design",
+    description:
+      "A print-first editorial system that translates seamlessly to screen. Typography-led, image-rich, built to be read.",
+    gallery: [
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80",
+    ],
+  },
+  {
+    slug: "project-h",
+    title: "Project H",
+    tags: ["Campaign", "Film"],
+    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=80",
+    client: "Confidential",
+    year: "2025",
+    role: "Direction, Production",
+    description:
+      "A flagship campaign blending film, motion and AI imagery into a single coherent world. Shipped across broadcast, social and OOH.",
+    gallery: [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=80",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1600&q=80",
+    ],
+  },
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);

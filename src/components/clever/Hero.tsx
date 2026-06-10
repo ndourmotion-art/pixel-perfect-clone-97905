@@ -22,7 +22,7 @@ export const Hero = () => {
 
 
   return (
-    <section id="top" className="relative pt-36 md:pt-44 pb-16 md:pb-24 overflow-hidden">
+    <section id="top" className="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={ref} className="reveal mb-10 md:mb-14" />
 
@@ -52,7 +52,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-16 md:mt-20 relative aspect-[16/9] md:aspect-[21/9] w-full min-h-[60vh] md:min-h-[80vh] overflow-hidden rounded-2xl bg-muted">
+        <div className="mt-10 md:mt-14 relative aspect-[21/9] w-full overflow-hidden rounded-2xl bg-muted">
           {slides.map((src, i) => (
             <img
               key={src}
