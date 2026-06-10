@@ -2,15 +2,37 @@ import { Link } from "react-router-dom";
 import { useReveal } from "@/hooks/useReveal";
 import { projects, type Project } from "@/data/projects";
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const spans = [
+  "md:col-span-7",
+  "md:col-span-5",
+  "md:col-span-4",
+  "md:col-span-8",
+  "md:col-span-5",
+  "md:col-span-4",
+  "md:col-span-3",
+  "md:col-span-12",
+];
+
+const aspects = [
+  "aspect-[16/10]",
+  "aspect-[4/3]",
+  "aspect-square",
+  "aspect-[16/10]",
+  "aspect-[5/4]",
+  "aspect-square",
+  "aspect-[4/5]",
+  "aspect-[21/9]",
+];
+
+const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   const ref = useReveal<HTMLAnchorElement>();
   return (
     <Link
       ref={ref}
       to={`/work/${project.slug}`}
-      className="reveal group block md:col-span-6"
+      className={`reveal group block ${spans[index] ?? "md:col-span-6"}`}
     >
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
+      <div className={`relative ${aspects[index] ?? "aspect-[4/3]"} overflow-hidden rounded-2xl bg-muted`}>
         <img
           src={project.image}
           alt={project.title}
@@ -55,8 +77,8 @@ export const FeaturedWork = () => {
         </div>
 
         <div className="grid md:grid-cols-12 gap-x-6 gap-y-16">
-          {projects.map((p) => (
-            <ProjectCard key={p.title} project={p} />
+          {projects.map((p, i) => (
+            <ProjectCard key={p.title} project={p} index={i} />
           ))}
         </div>
       </div>
