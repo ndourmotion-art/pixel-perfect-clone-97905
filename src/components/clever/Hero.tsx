@@ -17,7 +17,7 @@ export const Hero = () => {
           </span>
         </h1>
 
-        <div className="mt-8 md:mt-12 relative aspect-[21/9] w-full overflow-hidden rounded-2xl bg-muted">
+        <div className="mt-10 md:mt-16 relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-muted">
           <img
             src={heroImage}
             alt="Clever Africa hero"
