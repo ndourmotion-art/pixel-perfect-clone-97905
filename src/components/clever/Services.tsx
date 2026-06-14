@@ -36,12 +36,8 @@ export const Services = () => {
         <div ref={head} className="reveal max-w-3xl mb-16 md:mb-24">
           <div className="eyebrow text-surface-dark-foreground/60 mb-5">( Services & Expertise )</div>
           <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">
-            A digital design <span className="font-serif-italic normal-case text-surface-dark-foreground/80">powerhouse.</span>
+            A digital design
           </h2>
-          <p className="mt-8 text-lg md:text-xl text-surface-dark-foreground/70 max-w-2xl">
-            From strategy to screen — we shape brands across every surface they live on.
-            Four practices, one studio, built for momentum.
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-5xl mx-auto">
