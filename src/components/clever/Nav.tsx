@@ -28,23 +28,31 @@ export const Nav = () => {
         scrolled ? "fixed top-0 inset-x-0 z-50 transition-all duration-500 backdrop-blur-md bg-background/75 py-[18px] border border-slate-300" : "py-6 bg-transparent"
       )}
     >
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center justify-between gap-6">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center gap-6">
         <a href="#top" className="flex items-center gap-2 shrink-0" aria-label="Cleverafrica home">
           <img src={logo} alt="Cleverafrica" className="h-7 md:h-8 w-auto" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-1 rounded-full border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5 border-2 opacity-85 bg-[#344256]/0">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="px-4 py-1.5 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors rounded-full hover:bg-foreground/5"
-            >
-              {l.label}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden md:flex flex-1 justify-center">
+          <nav className="flex items-center gap-1 rounded-full border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5 border-2 opacity-85 bg-[#344256]/0">
+            {links.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="px-4 py-1.5 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors rounded-full hover:bg-foreground/5"
+              >
+                {l.label}
+              </a>
+            ))}
+          </nav>
+        </div>
 
+        <a
+          href="#contact"
+          className="hidden md:inline-flex items-center rounded-full bg-green-600 text-white px-5 py-2 text-sm font-semibold hover:bg-green-700 transition-colors shrink-0"
+        >
+          PRESTATION
+        </a>
 
         <button
           onClick={() => setOpen((v) => !v)}
