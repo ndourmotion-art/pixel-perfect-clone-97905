@@ -1,12 +1,12 @@
 import { useReveal } from "@/hooks/useReveal";
 
 const services = [
-  { no: "01", title: "ACTIVATION DE MARQUE" },
-  { no: "02", title: "BRANDING DE MARQUE" },
-  { no: "03", title: "PRODUCTION & RÉALISATION" },
-  { no: "04", title: "DESIGN DYNAMIQUE" },
-  { no: "05", title: "DESIGN STATIQUE" },
-  { no: "06", title: "CONCEPTION & RÉDACTION" },
+  { title: "ACTIVATION DE MARQUE", image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" },
+  { title: "BRANDING DE MARQUE", image: "https://images.unsplash.com/photo-1561070791-2526d30994b8?w=800&q=80" },
+  { title: "PRODUCTION & RÉALISATION", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" },
+  { title: "DESIGN DYNAMIQUE", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80" },
+  { title: "DESIGN STATIQUE", image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80" },
+  { title: "CONCEPTION & RÉDACTION", image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80" },
 ];
 
 const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
@@ -14,19 +14,22 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
   return (
     <div
       ref={ref}
-      className="reveal group aspect-square flex flex-col justify-between p-5 md:p-6 border border-surface-dark-foreground/15 rounded-2xl hover:bg-foreground/[0.04] transition-colors"
+      className="reveal group relative aspect-square flex items-center justify-center p-5 md:p-6 border border-surface-dark-foreground/15 rounded-2xl overflow-hidden transition-colors"
       style={{ transitionDelay: `${i * 60}ms` }}
     >
-      <div className="flex items-start justify-between">
-        <div className="eyebrow text-surface-dark-foreground/50">{s.no}</div>
-      </div>
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        style={{ backgroundImage: `url(${s.image})` }}
+      />
+      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-      <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] group-hover:text-primary transition-colors">
+      <h3 className="relative z-10 text-center font-display uppercase text-2xl md:text-3xl leading-[0.95] group-hover:text-white transition-colors">
         {s.title}
       </h3>
     </div>
   );
 };
+
 
 export const Services = () => {
   const head = useReveal<HTMLDivElement>();
