@@ -14,7 +14,7 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
   return (
     <div
       ref={ref}
-      className="reveal group relative aspect-square flex items-center justify-center p-5 md:p-6 border border-surface-dark-foreground/15 rounded-2xl overflow-hidden transition-colors"
+      className="reveal group relative aspect-square flex items-center justify-center p-5 md:p-6 overflow-hidden transition-colors"
       style={{ transitionDelay: `${i * 60}ms` }}
     >
       <div
@@ -43,7 +43,7 @@ export const Services = () => {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Card key={s.title} s={s} i={i} />
           ))}
