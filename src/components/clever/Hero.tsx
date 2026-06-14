@@ -13,7 +13,7 @@ export const Hero = () => {
 
         <h1 className="font-display uppercase tracking-tight">
           <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[clamp(2rem,9.2vw,11rem)]">
-            Moving brands <span className="text-primary">forward</span>
+            BRANDS <span className="text-primary">FORWARD</span>
           </span>
         </h1>
 
