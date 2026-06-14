@@ -1,34 +1,12 @@
 import { useReveal } from "@/hooks/useReveal";
 
 const services = [
-  {
-    no: "01",
-    title: "Brand Activation",
-    description:
-      "Nous donnons vie aux marques par des stratégies marketing percutantes et un positionnement clair qui captive votre audience cible.",
-    items: ["Stratégie marketing", "Positionnement de marque", "Digital marketing"],
-  },
-  {
-    no: "02",
-    title: "Brand Identity",
-    description:
-      "Une identité visuelle forte et cohérente, pensée pour exprimer la personnalité unique de votre marque à travers tous les points de contact.",
-    items: ["Art direction", "Interactive design", "Brand guidelines"],
-  },
-  {
-    no: "03",
-    title: "Vidéographie",
-    description:
-      "Des récits visuels immersifs, du scénario à la réalisation, pour transmettre vos messages avec émotion et impact.",
-    items: ["Storytelling", "Scénario", "Réalisation", "Conception rédaction"],
-  },
-  {
-    no: "04",
-    title: "Dynamic Content",
-    description:
-      "Contenus dynamiques mêlant 3D, motion design et intelligence artificielle pour créer des expériences visuelles à la pointe.",
-    items: ["3D design & rendering", "Motion design", "AI generated video", "AI imagery & compositing"],
-  },
+  { no: "01", title: "ACTIVATION DE MARQUE" },
+  { no: "02", title: "BRANDING DE MARQUE" },
+  { no: "03", title: "PRODUCTION & RÉALISATION" },
+  { no: "04", title: "DESIGN DYNAMIQUE" },
+  { no: "05", title: "DESIGN STATIQUE" },
+  { no: "06", title: "CONCEPTION & RÉDACTION" },
 ];
 
 const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
