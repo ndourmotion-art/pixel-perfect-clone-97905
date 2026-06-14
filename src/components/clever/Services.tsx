@@ -21,23 +21,9 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
         <div className="eyebrow text-surface-dark-foreground/50">{s.no}</div>
       </div>
 
-      <div>
-        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] group-hover:text-primary transition-colors">
-          {s.title}
-        </h3>
-        <p className="mt-3 text-xs md:text-sm text-surface-dark-foreground/70 leading-relaxed">
-          {s.description}
-        </p>
-      </div>
-
-      <ul className="grid grid-cols-1 gap-y-1 text-xs text-surface-dark-foreground/75">
-        {s.items.map((it) => (
-          <li key={it} className="flex items-start gap-2">
-            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
-            {it}
-          </li>
-        ))}
-      </ul>
+      <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] group-hover:text-primary transition-colors">
+        {s.title}
+      </h3>
     </div>
   );
 };
