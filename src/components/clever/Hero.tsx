@@ -11,8 +11,8 @@ export const Hero = () => {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={ref} className="reveal mb-8 md:mb-10" />
 
-        <h1 className="font-display uppercase tracking-tight">
-          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[clamp(2rem,9.2vw,11rem)]">
+        <h1 className="font-display uppercase tracking-tight text-center">
+          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[clamp(1.6rem,7.5vw,8.5rem)]">
             BRANDS <span className="text-primary">FORWARD</span>
           </span>
         </h1>
