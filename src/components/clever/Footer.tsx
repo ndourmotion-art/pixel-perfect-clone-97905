@@ -3,14 +3,21 @@ import logo from "@/assets/cleverafrica-logo.png";
 const cols = [
   {
     title: "Index",
-    links: ["Home", "Work", "Services", "About", "Contact"],
+    links: ["Accueil", "Réalisations", "Expertises", "À propos", "Contact"],
   },
   {
     title: "Services",
-    links: ["Brand Activation", "Brand Identity", "Vidéographie", "Dynamic Content"],
+    links: [
+      "Activation de marque",
+      "Branding de marque",
+      "Production & Réalisation",
+      "Design dynamique",
+      "Design statique",
+      "Conception & Rédaction",
+    ],
   },
   {
-    title: "Social",
+    title: "Réseaux",
     links: ["Instagram", "LinkedIn", "Behance", "Vimeo"],
   },
 ];
@@ -23,8 +30,7 @@ export const Footer = () => {
           <div className="md:col-span-5">
             <img src={logo} alt="Cleverafrica" className="h-8 w-auto mb-6" />
             <p className="text-foreground/70 max-w-sm leading-relaxed">
-              Creative studio for brands in motion. Identity, video, motion and
-              AI-powered content under one roof.
+              For brands, organizations, and startups of all sizes.
             </p>
           </div>
           {cols.map((c) => (
@@ -50,10 +56,10 @@ export const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-foreground/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-foreground/60">
-          <div>© {new Date().getFullYear()} Cleverafrica. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Cleverafrica. Tous droits réservés.</div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground">Privacy</a>
-            <a href="#" className="hover:text-foreground">Terms</a>
+            <a href="#" className="hover:text-foreground">Confidentialité</a>
+            <a href="#" className="hover:text-foreground">Conditions</a>
           </div>
         </div>
       </div>

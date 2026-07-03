@@ -37,7 +37,7 @@ export const Services = () => {
     <section id="services" className="bg-surface-dark text-surface-dark-foreground py-24 md:py-36">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={head} className="reveal max-w-3xl mb-16 md:mb-24">
-          <div className="eyebrow text-surface-dark-foreground/60 mb-5">( Services & Expertise )</div>
+          <div className="eyebrow text-surface-dark-foreground/60 mb-5">( Services & Expertises )</div>
           <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">
             Expertises
           </h2>

@@ -11,8 +11,8 @@ export const Hero = () => {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={ref} className="reveal mb-8 md:mb-10" />
 
-        <h1 className="font-display uppercase tracking-tight text-center">
-          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[clamp(1.6rem,7.5vw,8.5rem)]">
+        <h1 className="font-display uppercase tracking-tight text-center font-bold">
+          <span className="block font-sans font-black whitespace-nowrap leading-[0.95] text-[clamp(1.6rem,7.5vw,8.5rem)]">
             BRANDS <span className="text-primary">FORWARD</span>
           </span>
         </h1>
@@ -28,7 +28,7 @@ export const Hero = () => {
               href="#work"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground text-background pl-6 pr-2 py-2 text-base font-medium hover:bg-primary transition-colors"
             >
-              View Projects
+              Voir les projets
               <span className="h-9 w-9 rounded-full bg-background text-foreground flex items-center justify-center group-hover:rotate-45 transition-transform">
                 ↗
               </span>
@@ -37,14 +37,14 @@ export const Hero = () => {
               href="#contact"
               className="inline-flex items-center gap-2 rounded-full bg-background/95 backdrop-blur border border-foreground/10 px-6 py-3 text-base font-medium hover:bg-foreground hover:text-background transition-colors"
             >
-              Get a quote
+              Demander un devis
             </a>
           </div>
         </div>
 
         <div className="mt-20 md:mt-28 flex items-end justify-end gap-6 border-t border-foreground/10 pt-6">
           <div className="eyebrow text-foreground/60 flex items-center gap-2">
-            Scroll for more <span aria-hidden>↓</span>
+            Défiler pour plus <span aria-hidden>↓</span>
           </div>
         </div>
       </div>

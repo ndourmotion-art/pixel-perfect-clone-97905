@@ -10,30 +10,16 @@ const ProjectCard = ({ project }: { project: Project }) => {
       to={`/work/${project.slug}`}
       className="reveal group block"
     >
-      <div className="mb-4 flex items-start justify-between gap-6 opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-        <div>
-          <h3 className="font-display uppercase text-3xl md:text-4xl font-sans">{project.title}</h3>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-foreground/60">
-            {project.tags.map((t) => (
-              <span key={t}>{t}</span>
-            ))}
-          </div>
-        </div>
-        <span className="shrink-0 mt-2 h-10 w-10 rounded-full border border-foreground/20 flex items-center justify-center group-hover:bg-foreground group-hover:text-background group-hover:rotate-45 transition-all">
-          ↗
-        </span>
-      </div>
       <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
         <img
           src={project.image}
           alt={project.title}
           loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+          className="absolute inset-0 h-full w-full object-cover transition-all duration-[1200ms] ease-out group-hover:scale-105 group-hover:opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition-opacity shadow rounded-none opacity-85" />
-        <div className="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 p-6 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h3 className="font-display uppercase text-2xl md:text-3xl font-sans text-white">{project.title}</h3>
-          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-white/80">
+          <div className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-white/80">
             {project.tags.map((t) => (
               <span key={t}>{t}</span>
             ))}
@@ -51,14 +37,14 @@ export const FeaturedWork = () => {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={heading} className="reveal flex items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
-            <div className="eyebrow text-foreground/60 mb-4">( Selected Work )</div>
+            <div className="eyebrow text-foreground/60 mb-4">( Sélection )</div>
             <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">Nos réalisations</h2>
           </div>
           <a
             href="#work"
             className="hidden md:inline-flex items-center gap-2 text-sm font-medium border-b border-foreground/30 pb-1 hover:border-foreground"
           >
-            All Work →
+            Tous les projets →
           </a>
         </div>
 

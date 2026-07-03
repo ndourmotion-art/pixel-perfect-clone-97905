@@ -38,12 +38,12 @@ const posters = [
 const heightClasses = ["h-56", "h-72", "h-80", "h-64", "h-96", "h-60"];
 
 const labels = [
-  "Kinetic type", "Logo motion", "Reel cut", "Brand bumper", "Title sequence",
-  "Glyph reveal", "Product spot", "Lower third", "Promo loop", "Social cut",
-  "Stinger", "Identity loop", "Motion poster", "Type morph", "Frame study",
-  "Liquid type", "Sticker pack", "Bento story", "Editorial cut", "Hero film",
-  "Pitch reel", "Launch teaser", "Anthem film", "Manifesto", "Looping ad",
-  "VFX study", "AI render", "3D logo", "Sound design", "Director's cut",
+  "Type cinétique", "Motion logo", "Montage reel", "Bumper marque", "Générique",
+  "Révélation glyphe", "Spot produit", "Bandeau bas", "Boucle promo", "Format social",
+  "Stinger", "Boucle identité", "Affiche animée", "Morph typo", "Étude image",
+  "Type liquide", "Pack stickers", "Story bento", "Montage édito", "Film hero",
+  "Reel pitch", "Teaser lancement", "Film manifeste", "Manifeste", "Publicité boucle",
+  "Étude VFX", "Rendu IA", "Logo 3D", "Design sonore", "Cut du réalisateur",
 ];
 
 const cards = Array.from({ length: 30 }, (_, i) => ({
@@ -116,7 +116,7 @@ export const AnimaIndex = () => {
             Animation & motion <span className="font-serif-italic normal-case text-primary">index.</span>
           </h2>
           <p className="mt-6 max-w-2xl text-base md:text-lg text-foreground/70">
-            A live library of motion experiments — hover any card to play.
+            Une bibliothèque vivante d'expérimentations motion — survolez une carte pour lancer la lecture.
           </p>
         </div>
 

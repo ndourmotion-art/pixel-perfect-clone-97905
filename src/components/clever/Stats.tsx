@@ -1,14 +1,14 @@
 import { useReveal } from "@/hooks/useReveal";
 
 const stats = [
-  { value: "13+", label: "Years experience" },
-  { value: "15+", label: "Awards" },
+  { value: "13+", label: "Années d'expérience" },
+  { value: "15+", label: "Récompenses" },
   { value: "350+", label: "Clients" },
 ];
 
 const badges = [
-  { title: "Motion Specialist", sub: "Certified studio" },
-  { title: "AI Content Expert", sub: "End-to-end pipeline" },
+  { title: "Spécialiste Motion", sub: "Studio certifié" },
+  { title: "Expert Contenu IA", sub: "Pipeline de bout en bout" },
 ];
 
 export const Stats = () => {
@@ -17,7 +17,7 @@ export const Stats = () => {
     <section id="about" className="py-24 md:py-36">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={ref} className="reveal">
-          <div className="eyebrow text-foreground/60 mb-5">( About the studio )</div>
+          <div className="eyebrow text-foreground/60 mb-5">( À propos du studio )</div>
           <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium max-w-4xl">
             Des nombres en <span className="font-serif-italic normal-case text-primary">mouvement</span>.
           </h2>
@@ -41,9 +41,9 @@ export const Stats = () => {
             </div>
           ))}
           <div className="rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-            <div className="eyebrow opacity-80">( Headquarters )</div>
+            <div className="eyebrow opacity-80">( Siège )</div>
             <div className="font-display uppercase text-2xl mt-6">
-              Based in Africa — available worldwide.
+              Basés en Afrique — disponibles partout dans le monde.
             </div>
           </div>
         </div>

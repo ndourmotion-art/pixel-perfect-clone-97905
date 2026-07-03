@@ -139,6 +139,22 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1600&q=80",
     ],
   },
+  {
+    slug: "project-i",
+    title: "Project I",
+    tags: ["Brand Identity", "Motion"],
+    image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=1600&q=80",
+    client: "Confidential",
+    year: "2025",
+    role: "Identity, Motion",
+    description:
+      "Une identité vibrante déployée sur tous les supports, du print au motion, pensée pour durer.",
+    gallery: [
+      "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80",
+    ],
+  },
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
