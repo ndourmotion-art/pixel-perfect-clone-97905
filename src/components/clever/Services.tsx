@@ -14,7 +14,7 @@ const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
   return (
     <div
       ref={ref}
-      className="reveal group relative aspect-square flex items-center justify-center p-5 md:p-6 overflow-hidden transition-colors"
+      className="reveal group relative aspect-square flex items-center justify-center p-5 md:p-6 overflow-hidden transition-colors border border-white/20"
       style={{ transitionDelay: `${i * 60}ms` }}
     >
       <div
