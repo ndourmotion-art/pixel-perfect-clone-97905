@@ -10,16 +10,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       to={`/work/${project.slug}`}
       className="reveal group block"
     >
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
-        <img
-          src={project.image}
-          alt={project.title}
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition-opacity shadow rounded-none opacity-85" />
-      </div>
-      <div className="mt-5 flex items-start justify-between gap-6">
+      <div className="mb-4 flex items-start justify-between gap-6 opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
         <div>
           <h3 className="font-display uppercase text-3xl md:text-4xl font-sans">{project.title}</h3>
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-foreground/60">
@@ -31,6 +22,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <span className="shrink-0 mt-2 h-10 w-10 rounded-full border border-foreground/20 flex items-center justify-center group-hover:bg-foreground group-hover:text-background group-hover:rotate-45 transition-all">
           ↗
         </span>
+      </div>
+      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
+        <img
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition-opacity shadow rounded-none opacity-85" />
       </div>
     </Link>
   );
