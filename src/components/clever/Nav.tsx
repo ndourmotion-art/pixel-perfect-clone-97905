@@ -30,7 +30,7 @@ export const Nav = () => {
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center gap-6">
         <a href="#top" className="flex items-center gap-2 shrink-0" aria-label="Cleverafrica home">
-          <img src={logo} alt="Cleverafrica" className="h-7 md:h-8 w-auto" />
+          <img src={logo} alt="Cleverafrica" className="h-5 md:h-6 w-auto" />
         </a>
 
         <div className="hidden md:flex flex-1 justify-center">

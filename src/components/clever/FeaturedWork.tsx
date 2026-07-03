@@ -31,6 +31,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition-opacity shadow rounded-none opacity-85" />
+        <div className="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h3 className="font-display uppercase text-2xl md:text-3xl font-sans text-white">{project.title}</h3>
+          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-white/80">
+            {project.tags.map((t) => (
+              <span key={t}>{t}</span>
+            ))}
+          </div>
+        </div>
       </div>
     </Link>
   );
@@ -44,7 +52,7 @@ export const FeaturedWork = () => {
         <div ref={heading} className="reveal flex items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
             <div className="eyebrow text-foreground/60 mb-4">( Selected Work )</div>
-            <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">Featured projects</h2>
+            <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">Nos réalisations</h2>
           </div>
           <a
             href="#work"

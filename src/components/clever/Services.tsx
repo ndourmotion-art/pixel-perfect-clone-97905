@@ -39,7 +39,7 @@ export const Services = () => {
         <div ref={head} className="reveal max-w-3xl mb-16 md:mb-24">
           <div className="eyebrow text-surface-dark-foreground/60 mb-5">( Services & Expertise )</div>
           <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">
-            A digital design
+            Expertises
           </h2>
         </div>
 

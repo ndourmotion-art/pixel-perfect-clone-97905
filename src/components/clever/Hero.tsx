@@ -11,8 +11,8 @@ export const Hero = () => {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div ref={ref} className="reveal mb-8 md:mb-10" />
 
-        <h1 className="font-display uppercase tracking-tight">
-          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[clamp(2rem,9.2vw,11rem)]">
+        <h1 className="font-display uppercase tracking-tight text-center">
+          <span className="block font-sans font-bold whitespace-nowrap leading-[0.95] text-[clamp(1.6rem,7.5vw,8.5rem)]">
             BRANDS <span className="text-primary">FORWARD</span>
           </span>
         </h1>
@@ -42,8 +42,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-28 flex items-end justify-between gap-6 border-t border-foreground/10 pt-6">
-          <div className="eyebrow text-foreground/60">Est. 2019</div>
+        <div className="mt-20 md:mt-28 flex items-end justify-end gap-6 border-t border-foreground/10 pt-6">
           <div className="eyebrow text-foreground/60 flex items-center gap-2">
             Scroll for more <span aria-hidden>↓</span>
           </div>
