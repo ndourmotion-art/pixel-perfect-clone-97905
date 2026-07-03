@@ -42,8 +42,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-28 flex items-end justify-between gap-6 border-t border-foreground/10 pt-6">
-          <div className="eyebrow text-foreground/60">Est. 2019</div>
+        <div className="mt-20 md:mt-28 flex items-end justify-end gap-6 border-t border-foreground/10 pt-6">
           <div className="eyebrow text-foreground/60 flex items-center gap-2">
             Scroll for more <span aria-hidden>↓</span>
           </div>
