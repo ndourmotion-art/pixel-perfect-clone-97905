@@ -3,10 +3,10 @@ import logo from "@/assets/cleverafrica-logo.png";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
+  { label: "Réalisations", href: "#work" },
+  { label: "Expertises", href: "#services" },
   { label: "Anima index", href: "#anima" },
-  { label: "About", href: "#about" },
+  { label: "À propos", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -84,7 +84,7 @@ export const Nav = () => {
             onClick={() => setOpen(false)}
             className="mt-2 inline-flex items-center justify-between rounded-xl bg-foreground text-background px-4 py-3 text-base font-medium"
           >
-            Get a quote <span>→</span>
+            Demander un devis <span>→</span>
           </a>
         </div>
       )}

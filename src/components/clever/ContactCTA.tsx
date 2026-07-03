@@ -43,11 +43,12 @@ export const ContactCTA = () => {
                 className={`${inputClass} appearance-none pr-12 font-medium`}
               >
                 <option value="" disabled>Choisir un service</option>
-                <option value="branding">Branding</option>
-                <option value="motion">Motion design</option>
-                <option value="video">Vidéo</option>
-                <option value="ai">Contenu IA</option>
-                <option value="web">Web design</option>
+                <option value="activation">Activation de marque</option>
+                <option value="branding">Branding de marque</option>
+                <option value="production">Production & Réalisation</option>
+                <option value="design-dynamique">Design dynamique</option>
+                <option value="design-statique">Design statique</option>
+                <option value="conception">Conception & Rédaction</option>
               </select>
               <span className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-foreground/50">▾</span>
             </div>
