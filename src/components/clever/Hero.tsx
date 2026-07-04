@@ -1,7 +1,7 @@
 import { useReveal } from "@/hooks/useReveal";
+import heroAsset from "@/assets/ads2-preview.jpg.asset.json";
 
-const heroImage =
-  "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=2400&q=80";
+const heroImage = heroAsset.url;
 
 export const Hero = () => {
   const ref = useReveal<HTMLDivElement>();
