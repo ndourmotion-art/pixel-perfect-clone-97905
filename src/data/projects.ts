@@ -1,10 +1,15 @@
 import adsPreview from "@/assets/ads-preview.jpg.asset.json";
+import jet7xPreview from "@/assets/jet7x.jpg.asset.json";
+import championsPreview from "@/assets/les-champions.jpg.asset.json";
+import noelMadarPreview from "@/assets/noel-madar.jpg.asset.json";
+import sinoMaliPreview from "@/assets/sino-africaine-mali.jpg.asset.json";
 
 export type Project = {
   slug: string;
   title: string;
   tags: string[];
   image: string;
+  link?: string;
   client: string;
   year: string;
   role: string;
@@ -30,68 +35,56 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "project-b",
-    title: "Project B",
-    tags: ["Motion Design", "3D Rendering"],
-    image: "https://images.unsplash.com/photo-1605548109048-39b6e2424d8c?auto=format&fit=crop&w=1200&q=80",
-    client: "Confidential",
+    slug: "jet7x-doundeul",
+    title: "Jet7x — Doundeul s a katan",
+    tags: ["Publicité", "Motion"],
+    image: jet7xPreview.url,
+    link: "https://vimeo.com/1130287469?fl=pl&fe=sh",
+    client: "Jet7x",
     year: "2025",
-    role: "Motion, 3D",
+    role: "Direction, Production",
     description:
-      "A kinetic identity exploring rhythm, light and material. The system pairs procedural 3D with hand-tuned motion to give the brand a distinct sonic-visual signature.",
-    gallery: [
-      "https://images.unsplash.com/photo-1605548109048-39b6e2424d8c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&w=1600&q=80",
-    ],
+      "Campagne publicitaire pour Jet7x, mise en scène énergique autour de la boisson iconique.",
+    gallery: [jet7xPreview.url],
   },
   {
-    slug: "project-c",
-    title: "Project C",
-    tags: ["Brand Activation", "Video"],
-    image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=80",
-    client: "Confidential",
+    slug: "champions-proprete",
+    title: "Les champions de la propreté",
+    tags: ["Animation 3D", "Publicité"],
+    image: championsPreview.url,
+    link: "https://vimeo.com/779602628?fl=pl&fe=sh",
+    client: "Confidentiel",
+    year: "2024",
+    role: "Direction, Animation 3D",
+    description:
+      "Une animation 3D vibrante célébrant l'esprit d'équipe et la performance sur le terrain.",
+    gallery: [championsPreview.url],
+  },
+  {
+    slug: "noel-chez-madar",
+    title: "Noël chez Madar",
+    tags: ["Publicité", "3D"],
+    image: noelMadarPreview.url,
+    link: "https://vimeo.com/1066685587?fl=pl&fe=sh",
+    client: "Madar",
     year: "2024",
     role: "Direction, Production",
     description:
-      "An on-the-ground brand activation captured through a documentary lens. We crafted the concept, directed the shoot and edited a series of short-form films for launch.",
-    gallery: [
-      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1600&q=80",
-    ],
+      "Une campagne festive pour Madar mêlant lumière, éclat et magie de Noël.",
+    gallery: [noelMadarPreview.url],
   },
   {
-    slug: "project-d",
-    title: "Project D",
-    tags: ["Digital Marketing", "Web"],
-    image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80",
-    client: "Confidential",
+    slug: "cooperation-sino-africaine-mali",
+    title: "La coopération Sino-Africaine au Mali",
+    tags: ["Documentaire", "Motion Design"],
+    image: sinoMaliPreview.url,
+    link: "https://vimeo.com/924594743?fl=pl&fe=sh",
+    client: "Confidentiel",
     year: "2024",
-    role: "Strategy, Web Design",
+    role: "Direction, Motion",
     description:
-      "A digital platform built to convert. Strategy, design and engineering came together to ship a fast, accessible site that lifted core funnel metrics by double digits.",
-    gallery: [
-      "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1600&q=80",
-    ],
-  },
-  {
-    slug: "project-e",
-    title: "Project E",
-    tags: ["AI Imagery", "Compositing"],
-    image: "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1200&q=80",
-    client: "Confidential",
-    year: "2025",
-    role: "AI Direction, Compositing",
-    description:
-      "A campaign of impossible images. We combined custom-trained models with traditional compositing to deliver a surreal yet on-brand visual world.",
-    gallery: [
-      "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1600&q=80",
-    ],
+      "Un film documentaire retraçant la coopération économique Sino-Africaine au Mali.",
+    gallery: [sinoMaliPreview.url],
   },
   {
     slug: "project-f",
