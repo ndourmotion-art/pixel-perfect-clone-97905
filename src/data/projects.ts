@@ -1,4 +1,8 @@
 import adsPreview from "@/assets/ads-preview.jpg.asset.json";
+import jet7xPreview from "@/assets/jet7x.jpg.asset.json";
+import championsPreview from "@/assets/les-champions.jpg.asset.json";
+import noelMadarPreview from "@/assets/noel-madar.jpg.asset.json";
+import sinoMaliPreview from "@/assets/sino-africaine-mali.jpg.asset.json";
 
 export type Project = {
   slug: string;
