@@ -1,3 +1,5 @@
+import adsPreview from "@/assets/ads-preview.jpg.asset.json";
+
 export type Project = {
   slug: string;
   title: string;
@@ -15,14 +17,14 @@ export const projects: Project[] = [
     slug: "project-a",
     title: "Project A",
     tags: ["Brand Identity", "Art Direction"],
-    image: "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1600&q=80",
+    image: adsPreview.url,
     client: "Confidential",
     year: "2025",
     role: "Identity, Art Direction",
     description:
       "A complete brand system built around bold typography and a living color palette. From logo to motion guidelines, every detail is engineered to scale across digital and physical touchpoints.",
     gallery: [
-      "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1600&q=80",
+      adsPreview.url,
       "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
     ],

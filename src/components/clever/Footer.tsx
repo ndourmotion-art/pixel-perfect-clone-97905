@@ -57,10 +57,6 @@ export const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-foreground/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-foreground/60">
           <div>© {new Date().getFullYear()} Cleverafrica. Tous droits réservés.</div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground">Confidentialité</a>
-            <a href="#" className="hover:text-foreground">Conditions</a>
-          </div>
         </div>
       </div>
     </footer>
