@@ -105,7 +105,7 @@ export const Nav = () => {
             <a
               key={l.href}
               href={l.href}
-              onClick={() => setOpen(false)}
+              onClick={(e) => { setOpen(false); handleClick(e, l.href); }}
               className="px-4 py-3 rounded-xl text-base font-medium hover:bg-foreground/5"
             >
               {l.label}
@@ -113,11 +113,12 @@ export const Nav = () => {
           ))}
           <a
             href="#contact"
-            onClick={() => setOpen(false)}
+            onClick={(e) => { setOpen(false); handleClick(e, "#contact"); }}
             className="mt-2 inline-flex items-center justify-between rounded-xl bg-foreground text-background px-4 py-3 text-base font-medium"
           >
             Demander un devis <span>→</span>
           </a>
+
         </div>
       )}
     </header>
