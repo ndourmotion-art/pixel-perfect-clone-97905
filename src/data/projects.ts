@@ -3,6 +3,11 @@ import jet7xPreview from "@/assets/jet7x.jpg.asset.json";
 import championsPreview from "@/assets/les-champions.jpg.asset.json";
 import noelMadarPreview from "@/assets/noel-madar.jpg.asset.json";
 import sinoMaliPreview from "@/assets/sino-africaine-mali.jpg.asset.json";
+import muna1 from "@/assets/muna1.jpg.asset.json";
+import muna2 from "@/assets/muna2.jpg.asset.json";
+import muna3 from "@/assets/muna3.jpg.asset.json";
+import muna4 from "@/assets/muna4.jpg.asset.json";
+import ads3 from "@/assets/ads3.jpg.asset.json";
 
 export type Project = {
   slug: string;
