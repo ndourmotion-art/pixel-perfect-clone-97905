@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { label: "Réalisations", href: "#work" },
-  { label: "Expertises", href: "#services" },
+  { label: "Services", href: "#services" },
   { label: "Anima index", href: "#anima" },
   { label: "À propos", href: "#about" },
   { label: "Contact", href: "#contact" },
