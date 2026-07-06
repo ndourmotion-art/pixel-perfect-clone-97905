@@ -43,9 +43,31 @@ const ProjectPage = () => {
         </header>
 
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-muted">
-            <img src={project.image} alt={project.title} className="absolute inset-0 h-full w-full object-cover" />
-          </div>
+          {project.link ? (
+            (() => {
+              const match = project.link.match(/vimeo\.com\/(\d+)/);
+              const vid = match?.[1];
+              return vid ? (
+                <div className="relative aspect-video overflow-hidden rounded-2xl bg-black">
+                  <iframe
+                    src={`https://player.vimeo.com/video/${vid}`}
+                    className="absolute inset-0 h-full w-full"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title={project.title}
+                  />
+                </div>
+              ) : (
+                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-muted">
+                  <img src={project.image} alt={project.title} className="absolute inset-0 h-full w-full object-cover" />
+                </div>
+              );
+            })()
+          ) : (
+            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-muted">
+              <img src={project.image} alt={project.title} className="absolute inset-0 h-full w-full object-cover" />
+            </div>
+          )}
         </div>
 
         <section className="mx-auto max-w-[1400px] px-6 lg:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10">
