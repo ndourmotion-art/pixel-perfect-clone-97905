@@ -3,6 +3,11 @@ import jet7xPreview from "@/assets/jet7x.jpg.asset.json";
 import championsPreview from "@/assets/les-champions.jpg.asset.json";
 import noelMadarPreview from "@/assets/noel-madar.jpg.asset.json";
 import sinoMaliPreview from "@/assets/sino-africaine-mali.jpg.asset.json";
+import muna1 from "@/assets/muna1.jpg.asset.json";
+import muna2 from "@/assets/muna2.jpg.asset.json";
+import muna3 from "@/assets/muna3.jpg.asset.json";
+import muna4 from "@/assets/muna4.jpg.asset.json";
+import ads3 from "@/assets/ads3.jpg.asset.json";
 
 export type Project = {
   slug: string;
@@ -87,20 +92,29 @@ export const projects: Project[] = [
     gallery: [sinoMaliPreview.url],
   },
   {
-    slug: "project-f",
-    title: "Project F",
-    tags: ["Storytelling", "Realisation"],
-    image: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1200&q=80",
-    client: "Confidential",
-    year: "2024",
-    role: "Story, Direction",
+    slug: "le-jardin-muna",
+    title: "Le Jardin Muna",
+    tags: ["Publicité", "Direction Artistique"],
+    image: muna4.url,
+    client: "Le Jardin Muna",
+    year: "2025",
+    role: "Direction Artistique, Production",
     description:
-      "A short film exploring craft and place. A tight crew, natural light and a patient edit produced a piece that has travelled the festival circuit.",
-    gallery: [
-      "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=1600&q=80",
-    ],
+      "Une campagne visuelle vibrante pour Le Jardin Muna, célébrant les jus 100% naturels à travers des visuels colorés et immersifs.",
+    gallery: [muna1.url, muna2.url, muna3.url, muna4.url],
+  },
+  {
+    slug: "ads-centre-appel",
+    title: "ADS Centre d'Appel",
+    tags: ["Publicité", "Film"],
+    image: ads3.url,
+    link: "https://vimeo.com/1206991529?fl=pl&fe=sh",
+    client: "ADS",
+    year: "2025",
+    role: "Direction, Production",
+    description:
+      "Un film publicitaire pour ADS mettant en lumière le service du centre d'appel et l'engagement des équipes sur le terrain.",
+    gallery: [ads3.url],
   },
   {
     slug: "project-g",
