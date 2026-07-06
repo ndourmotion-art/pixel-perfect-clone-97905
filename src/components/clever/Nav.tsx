@@ -58,7 +58,7 @@ export const Nav = () => {
       )}
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center gap-6">
-        <a href="#top" className="flex items-center gap-2 shrink-0" aria-label="Cleverafrica home">
+        <a href="#top" onClick={(e) => handleClick(e, "#top")} className="flex items-center gap-2 shrink-0" aria-label="Cleverafrica home">
           <img src={logo} alt="Cleverafrica" className="h-5 md:h-6 w-auto" />
         </a>
 
@@ -68,6 +68,7 @@ export const Nav = () => {
               <a
                 key={l.href}
                 href={l.href}
+                onClick={(e) => handleClick(e, l.href)}
                 className="px-4 py-1.5 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors rounded-full hover:bg-foreground/5"
               >
                 {l.label}
@@ -78,10 +79,12 @@ export const Nav = () => {
 
         <a
           href="#contact"
+          onClick={(e) => handleClick(e, "#contact")}
           className="hidden md:inline-flex items-center rounded-full bg-green-600 text-white px-5 py-2 text-sm font-semibold hover:bg-green-700 transition-colors shrink-0"
         >
           PRESTATION
         </a>
+
 
         <button
           onClick={() => setOpen((v) => !v)}
