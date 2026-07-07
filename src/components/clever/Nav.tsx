@@ -13,6 +13,7 @@ const links = [
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [fading, setFading] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -21,31 +22,24 @@ export const Nav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const smoothScrollTo = (href: string) => {
+  const scrollToTarget = (href: string) => {
     if (!href.startsWith("#")) return;
     const id = href.slice(1);
     const el = document.getElementById(id);
     if (!el) return;
-    const startY = window.scrollY;
-    const targetY = el.getBoundingClientRect().top + startY - 80;
-    const distance = targetY - startY;
-    const duration = 1400;
-    const startTime = performance.now();
-    const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-    const step = (now: number) => {
-      const elapsed = now - startTime;
-      const t = Math.min(1, elapsed / duration);
-      window.scrollTo(0, startY + distance * ease(t));
-      if (t < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
+    const targetY = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo(0, targetY);
   };
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith("#")) {
       e.preventDefault();
-      smoothScrollTo(href);
-      history.replaceState(null, "", href);
+      setFading(true);
+      setTimeout(() => {
+        scrollToTarget(href);
+        history.replaceState(null, "", href);
+        setTimeout(() => setFading(false), 50);
+      }, 350);
     }
   };
 
