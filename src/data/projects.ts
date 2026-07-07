@@ -8,6 +8,8 @@ import muna2 from "@/assets/muna2.jpg.asset.json";
 import muna3 from "@/assets/muna3.jpg.asset.json";
 import muna4 from "@/assets/muna4.jpg.asset.json";
 import ads3 from "@/assets/ads3.jpg.asset.json";
+import can2023 from "@/assets/can2023.jpg.asset.json";
+import sococim from "@/assets/sococim.jpg.asset.json";
 
 export type Project = {
   slug: string;
