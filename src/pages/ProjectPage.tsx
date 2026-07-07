@@ -91,13 +91,14 @@ const ProjectPage = () => {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 pb-24 md:pb-36 grid md:grid-cols-2 gap-6">
+        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 pb-24 md:pb-36 flex flex-col gap-6">
           {project.gallery.map((src, i) => (
-            <div key={i} className={`relative overflow-hidden rounded-2xl bg-muted ${i === 0 ? "md:col-span-2 aspect-[16/9]" : "aspect-[4/3]"}`}>
-              <img src={src} alt={`${project.title} ${i + 1}`} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+            <div key={i} className="rounded-2xl bg-muted overflow-hidden">
+              <img src={src} alt={`${project.title} ${i + 1}`} loading="lazy" className="w-full h-auto object-contain" />
             </div>
           ))}
         </section>
+
 
         <section className="border-t border-foreground/10">
           <Link to={`/work/${next.slug}`} className="group block mx-auto max-w-[1400px] px-6 lg:px-10 py-16 md:py-20">
