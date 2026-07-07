@@ -37,9 +37,10 @@ export const Stats = () => {
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <div key={t.author} className="rounded-2xl border border-foreground/15 p-6">
-              <p className="font-display uppercase text-xl leading-snug">"{t.quote}"</p>
+              <p className="font-display normal-case text-xl leading-snug">"{t.quote}"</p>
               <div className="mt-4 eyebrow text-foreground/60">— {t.author}</div>
             </div>
+
           ))}
         </div>
       </div>
