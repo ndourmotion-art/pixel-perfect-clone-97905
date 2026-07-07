@@ -117,11 +117,12 @@ export const Nav = () => {
       )}
       <div
         className={cn(
-          "fixed inset-0 z-[60] pointer-events-none bg-black transition-opacity duration-300",
-          fading ? "opacity-90" : "opacity-0"
+          "fixed inset-0 z-[60] pointer-events-none bg-white transition-opacity duration-300",
+          fading ? "opacity-95" : "opacity-0"
         )}
         aria-hidden="true"
       />
+
     </header>
   );
 };
