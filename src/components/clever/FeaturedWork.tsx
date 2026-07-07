@@ -13,7 +13,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-[#3A3B36]/0 group-hover:bg-[#3A3B36]/90 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/95 transition-colors duration-500" />
         <div className="absolute inset-0 p-6 flex flex-col items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h3 className="font-display uppercase text-2xl md:text-3xl font-sans text-white">{project.title}</h3>
           <div className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1 text-sm text-white/80">
