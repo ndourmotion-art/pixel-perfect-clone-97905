@@ -4,13 +4,14 @@ import productionRealisation from "@/assets/production-realisation.jpg.asset.jso
 import conceptionRedaction from "@/assets/conception-redaction.jpg.asset.json";
 import brandingDeMarque from "@/assets/branding-de-marque.jpg.asset.json";
 import designDynamique from "@/assets/design-dynamique.jpg.asset.json";
+import designStatique from "@/assets/design-statique.jpg.asset.json";
 
 const services = [
   { title: "ACTIVATION DE MARQUE", image: activationMarque.url },
   { title: "BRANDING DE MARQUE", image: brandingDeMarque.url },
   { title: "PRODUCTION & RÉALISATION", image: productionRealisation.url },
   { title: "DESIGN DYNAMIQUE", image: designDynamique.url },
-  { title: "DESIGN STATIQUE", image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80" },
+  { title: "DESIGN STATIQUE", image: designStatique.url },
   { title: "CONCEPTION & RÉDACTION", image: conceptionRedaction.url },
 ];
 
