@@ -91,7 +91,7 @@ const ProjectPage = () => {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 pb-24 md:pb-36 flex flex-col gap-6">
+        <section className="mx-auto max-w-[800px] px-6 lg:px-10 pb-24 md:pb-36 flex flex-col gap-6">
           {project.gallery.map((src, i) => (
             <div key={i} className="rounded-2xl bg-muted overflow-hidden">
               <img src={src} alt={`${project.title} ${i + 1}`} loading="lazy" className="w-full h-auto object-contain" />
