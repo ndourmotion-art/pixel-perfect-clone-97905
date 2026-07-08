@@ -11,7 +11,7 @@ const services = [
   { title: "BRANDING DE MARQUE", image: brandingDeMarque.url },
   { title: "PRODUCTION & RÉALISATION", image: productionRealisation.url },
   { title: "DESIGN DYNAMIQUE", image: designDynamique.url },
-  { title: "DESIGN STATIQUE", image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80" },
+  { title: "DESIGN STATIQUE", image: designStatique.url },
   { title: "CONCEPTION & RÉDACTION", image: conceptionRedaction.url },
 ];
 
