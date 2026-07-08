@@ -4,6 +4,7 @@ import productionRealisation from "@/assets/production-realisation.jpg.asset.jso
 import conceptionRedaction from "@/assets/conception-redaction.jpg.asset.json";
 import brandingDeMarque from "@/assets/branding-de-marque.jpg.asset.json";
 import designDynamique from "@/assets/design-dynamique.jpg.asset.json";
+import designStatique from "@/assets/design-statique.jpg.asset.json";
 
 const services = [
   { title: "ACTIVATION DE MARQUE", image: activationMarque.url },
