@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/cleverafrica-logo.png";
 import { cn } from "@/lib/utils";
 
@@ -16,7 +16,7 @@ export const Nav = () => {
   const [open, setOpen] = useState(false);
   const [fading, setFading] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
