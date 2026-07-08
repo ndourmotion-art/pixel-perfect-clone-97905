@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/cleverafrica-logo.png";
 import { cn } from "@/lib/utils";
 
@@ -14,6 +15,8 @@ export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [fading, setFading] = useState(false);
+  const location = useLocation();
+  
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -52,9 +55,19 @@ export const Nav = () => {
       )}
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center gap-6">
-        <a href="#top" onClick={(e) => handleClick(e, "#top")} className="flex items-center gap-2 shrink-0" aria-label="Cleverafrica home">
+        <Link
+          to="/"
+          onClick={(e) => {
+            if (location.pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+          className="flex items-center gap-2 shrink-0"
+          aria-label="Cleverafrica home"
+        >
           <img src={logo} alt="Cleverafrica" className="h-5 md:h-6 w-auto" />
-        </a>
+        </Link>
 
         <div className="hidden md:flex flex-1 justify-center">
           <nav className="flex items-center gap-1 rounded-full border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5 border-2 opacity-85 bg-[#344256]/0">

@@ -1,12 +1,15 @@
 import { useReveal } from "@/hooks/useReveal";
+import activationMarque from "@/assets/activation-marque.jpg.asset.json";
+import productionRealisation from "@/assets/production-realisation.jpg.asset.json";
+import conceptionRedaction from "@/assets/conception-redaction.jpg.asset.json";
 
 const services = [
-  { title: "ACTIVATION DE MARQUE", image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" },
+  { title: "ACTIVATION DE MARQUE", image: activationMarque.url },
   { title: "BRANDING DE MARQUE", image: "https://images.unsplash.com/photo-1561070791-2526d30994b8?w=800&q=80" },
-  { title: "PRODUCTION & RÉALISATION", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" },
+  { title: "PRODUCTION & RÉALISATION", image: productionRealisation.url },
   { title: "DESIGN DYNAMIQUE", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80" },
   { title: "DESIGN STATIQUE", image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80" },
-  { title: "CONCEPTION & RÉDACTION", image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80" },
+  { title: "CONCEPTION & RÉDACTION", image: conceptionRedaction.url },
 ];
 
 const Card = ({ s, i }: { s: typeof services[number]; i: number }) => {
