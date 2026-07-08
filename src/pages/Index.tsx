@@ -4,7 +4,7 @@ import { LogoMarquee } from "@/components/clever/LogoMarquee";
 import { FeaturedWork } from "@/components/clever/FeaturedWork";
 import { Services } from "@/components/clever/Services";
 import { Stats } from "@/components/clever/Stats";
-import { AnimaIndex } from "@/components/clever/AnimaIndex";
+
 import { MadeWithPassion } from "@/components/clever/MadeWithPassion";
 import { Toolbox } from "@/components/clever/Toolbox";
 import { ContactCTA } from "@/components/clever/ContactCTA";
@@ -19,7 +19,7 @@ const Index = () => {
       <FeaturedWork />
       <Services />
       <Stats />
-      <AnimaIndex />
+      
       <MadeWithPassion />
       <Toolbox />
       <ContactCTA />
