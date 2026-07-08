@@ -2,12 +2,14 @@ import { useReveal } from "@/hooks/useReveal";
 import activationMarque from "@/assets/activation-marque.jpg.asset.json";
 import productionRealisation from "@/assets/production-realisation.jpg.asset.json";
 import conceptionRedaction from "@/assets/conception-redaction.jpg.asset.json";
+import brandingDeMarque from "@/assets/branding-de-marque.jpg.asset.json";
+import designDynamique from "@/assets/design-dynamique.jpg.asset.json";
 
 const services = [
   { title: "ACTIVATION DE MARQUE", image: activationMarque.url },
-  { title: "BRANDING DE MARQUE", image: "https://images.unsplash.com/photo-1561070791-2526d30994b8?w=800&q=80" },
+  { title: "BRANDING DE MARQUE", image: brandingDeMarque.url },
   { title: "PRODUCTION & RÉALISATION", image: productionRealisation.url },
-  { title: "DESIGN DYNAMIQUE", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80" },
+  { title: "DESIGN DYNAMIQUE", image: designDynamique.url },
   { title: "DESIGN STATIQUE", image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80" },
   { title: "CONCEPTION & RÉDACTION", image: conceptionRedaction.url },
 ];
