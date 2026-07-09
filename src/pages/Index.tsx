@@ -3,6 +3,7 @@ import { Hero } from "@/components/clever/Hero";
 import { LogoMarquee } from "@/components/clever/LogoMarquee";
 import { FeaturedWork } from "@/components/clever/FeaturedWork";
 import { Services } from "@/components/clever/Services";
+import { Solutions } from "@/components/clever/Solutions";
 import { Stats } from "@/components/clever/Stats";
 
 import { MadeWithPassion } from "@/components/clever/MadeWithPassion";
@@ -18,7 +19,9 @@ const Index = () => {
       <LogoMarquee />
       <FeaturedWork />
       <Services />
+      <Solutions />
       <Stats />
+      
       
       <MadeWithPassion />
       <Toolbox />
