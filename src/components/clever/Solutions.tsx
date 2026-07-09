@@ -57,7 +57,7 @@ const PackCard = ({ pack, i }: { pack: typeof packs[number]; i: number }) => {
       style={{ transitionDelay: `${i * 80}ms` }}
     >
       <div className="mb-6">
-        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95]">
+        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] whitespace-pre-line">
           {pack.name}
         </h3>
         <p className="mt-3 text-surface-dark-foreground/70 text-sm md:text-base leading-relaxed">
