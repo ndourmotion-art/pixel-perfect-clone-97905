@@ -32,7 +32,7 @@ const ProjectPage = () => {
         <header ref={heading} className="reveal pt-36 md:pt-44 pb-12 md:pb-16 mx-auto max-w-[1400px] px-6 lg:px-10">
           <Link to="/#work" className="text-sm text-foreground/60 hover:text-foreground">← All work</Link>
           <div className="eyebrow text-foreground/60 mt-6 mb-4">( Case study )</div>
-          <h1 className="font-display uppercase text-display-lg text-6xl md:text-8xl font-medium leading-[0.95]">
+          <h1 className="font-display uppercase text-display-lg text-xl md:text-2xl font-medium leading-[0.95]">
             {project.title}
           </h1>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground/70">
