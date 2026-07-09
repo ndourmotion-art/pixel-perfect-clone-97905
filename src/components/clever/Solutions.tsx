@@ -31,7 +31,7 @@ const packs = [
     revisions: "Nombre de révision : 5 révisions",
   },
   {
-    name: "Formule Sans limite",
+    name: "Formule Sans\nlimite",
     tagline: "Renforcer votre présence et accélérer votre croissance",
     features: [
       "Conception graphique",
