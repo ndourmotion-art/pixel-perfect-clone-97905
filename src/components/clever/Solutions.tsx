@@ -31,7 +31,7 @@ const packs = [
     revisions: "Nombre de révision : 5 révisions",
   },
   {
-    name: "Formule Sans limite",
+    name: "Formule Sans\nlimite",
     tagline: "Renforcer votre présence et accélérer votre croissance",
     features: [
       "Conception graphique",
@@ -57,7 +57,7 @@ const PackCard = ({ pack, i }: { pack: typeof packs[number]; i: number }) => {
       style={{ transitionDelay: `${i * 80}ms` }}
     >
       <div className="mb-6">
-        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95]">
+        <h3 className="font-display uppercase text-2xl md:text-3xl leading-[0.95] whitespace-pre-line">
           {pack.name}
         </h3>
         <p className="mt-3 text-surface-dark-foreground/70 text-sm md:text-base leading-relaxed">
@@ -90,7 +90,7 @@ export const Solutions = () => {
         <div ref={head} className="reveal max-w-3xl mb-16 md:mb-24">
           <div className="eyebrow text-surface-dark-foreground/60 mb-5">( Packs sur mesure )</div>
           <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">
-            Solution sur mesure
+            Solutions sur mesure
           </h2>
         </div>
 
