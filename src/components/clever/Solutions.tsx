@@ -90,7 +90,7 @@ export const Solutions = () => {
         <div ref={head} className="reveal max-w-3xl mb-16 md:mb-24">
           <div className="eyebrow text-surface-dark-foreground/60 mb-5">( Packs sur mesure )</div>
           <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">
-            Solution sur mesure
+            Solutions sur mesure
           </h2>
         </div>
 
