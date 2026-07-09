@@ -104,7 +104,7 @@ const ProjectPage = () => {
           <Link to={`/work/${next.slug}`} className="group block mx-auto max-w-[1400px] px-6 lg:px-10 py-16 md:py-20">
             <div className="eyebrow text-foreground/60 mb-3">( Next project )</div>
             <div className="flex items-end justify-between gap-6">
-              <h2 className="font-display uppercase text-4xl md:text-6xl group-hover:text-primary transition-colors">
+              <h2 className="font-display uppercase text-xl md:text-2xl group-hover:text-primary transition-colors">
                 {next.title}
               </h2>
               <span className="h-12 w-12 rounded-full border border-foreground/20 flex items-center justify-center group-hover:bg-foreground group-hover:text-background group-hover:rotate-45 transition-all">
