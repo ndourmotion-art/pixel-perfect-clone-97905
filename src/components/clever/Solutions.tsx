@@ -77,6 +77,12 @@ const PackCard = ({ pack, i }: { pack: typeof packs[number]; i: number }) => {
       <div className="mt-auto pt-6 border-t border-white/10 space-y-2">
         <p className="text-sm text-surface-dark-foreground/70">{pack.duration}</p>
         <p className="text-sm text-surface-dark-foreground/70">{pack.revisions}</p>
+        <a
+          href="#contact"
+          className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-foreground text-background py-3 text-sm md:text-base font-medium hover:bg-primary transition-colors"
+        >
+          Choisir
+        </a>
       </div>
     </div>
   );
