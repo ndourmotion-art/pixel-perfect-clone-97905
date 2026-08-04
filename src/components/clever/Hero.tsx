@@ -28,12 +28,13 @@ export const Hero = () => {
               <span className="block font-sans font-black text-background text-[clamp(2.2rem,7vw,6rem)]">
                 Things
               </span>
-              <span className="block font-sans font-black text-primary text-[clamp(2.2rem,7vw,6rem)]">
+              <span className="block font-sans font-black text-accent text-[clamp(2.2rem,7vw,6rem)]">
                 Move
               </span>
-              <span className="block font-sans font-black text-primary text-[clamp(2.2rem,7vw,6rem)]">
+              <span className="block font-sans font-black text-accent text-[clamp(2.2rem,7vw,6rem)]">
                 Forward
               </span>
+
             </h1>
 
             <div className="mt-8 md:mt-10 flex flex-wrap items-center gap-4">
