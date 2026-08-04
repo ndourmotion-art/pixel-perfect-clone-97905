@@ -1,20 +1,17 @@
-const clients = [
-  "MTN", "Orange", "Dangote", "Safaricom", "Jumia", "Flutterwave",
-  "Andela", "Kuda", "Glovo", "Canal+", "AFD", "UNESCO",
-];
+const items = Array.from({ length: 12 }, () => "SOYEZ VISIBLE");
 
 export const LogoMarquee = () => {
-  const row = [...clients, ...clients];
+  const row = [...items, ...items];
   return (
-    <section className="border-y border-foreground/10 overflow-hidden bg-stone-200 py-[20px]">
-      <div className="flex items-center gap-16 whitespace-nowrap animate-marquee will-change-transform">
+    <section className="border-y border-foreground/10 overflow-hidden bg-stone-200 py-2">
+      <div className="flex items-center gap-8 whitespace-nowrap animate-marquee will-change-transform">
         {row.map((name, i) => (
           <span
             key={i}
-            className="font-display uppercase text-3xl md:text-4xl text-foreground/55 hover:text-foreground transition-colors font-sans text-green-700"
+            className="font-sans uppercase text-sm md:text-base font-semibold text-accent"
           >
             {name}
-            <span className="mx-8 text-accent">✦</span>
+            <span className="mx-4 text-accent">✦</span>
           </span>
         ))}
       </div>
