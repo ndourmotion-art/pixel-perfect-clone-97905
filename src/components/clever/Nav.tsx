@@ -69,7 +69,7 @@ export const Nav = () => {
           <img src={logo} alt="Cleverafrica" className="h-4 md:h-5 w-auto" />
         </Link>
 
-        <div className="hidden md:flex flex-1 justify-start">
+        <div className="hidden md:flex flex-1 justify-end">
           <nav className="flex items-center gap-1 rounded-full border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5 border-2 opacity-85 bg-[#344256]/0">
             {links.map((l) => (
               <a
