@@ -49,7 +49,7 @@ export const Hero = () => {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-base font-medium hover:bg-foreground hover:text-background transition-colors"
+                className="inline-flex items-center gap-2 rounded-full bg-accent text-accent-foreground px-6 py-3 text-base font-medium hover:bg-foreground hover:text-background transition-colors"
               >
                 Demander un devis
               </a>
@@ -57,12 +57,6 @@ export const Hero = () => {
           </div>
         </div>
 
-
-        <div className="mt-20 md:mt-28 flex items-end justify-end gap-6 border-t border-foreground/10 pt-6">
-          <div className="eyebrow text-foreground/60 flex items-center gap-2">
-            Défiler pour plus <span aria-hidden>↓</span>
-          </div>
-        </div>
       </div>
 
       <div
