@@ -8,7 +8,7 @@ export const Hero = () => {
 
   return (
     <section id="top" className="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden">
-      <div className="mx-auto max-w-[1400px] px-2 md:px-4">
+      <div className="mx-auto max-w-[1600px] px-2 md:px-4">
         <div ref={ref} className="reveal relative aspect-[4/3] md:aspect-[16/10] w-full overflow-hidden rounded-2xl bg-muted">
           <img
             src={heroImage}
