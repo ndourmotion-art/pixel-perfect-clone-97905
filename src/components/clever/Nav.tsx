@@ -54,7 +54,7 @@ export const Nav = () => {
         scrolled ? "fixed top-0 inset-x-0 z-50 transition-all duration-500 backdrop-blur-md bg-background/75 py-[18px] border border-slate-300" : "py-6 bg-transparent"
       )}
     >
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center gap-6">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center justify-between">
         <Link
           to="/"
           onClick={(e) => {
@@ -69,7 +69,7 @@ export const Nav = () => {
           <img src={logo} alt="Cleverafrica" className="h-4 md:h-5 w-auto" />
         </Link>
 
-        <div className="hidden md:flex flex-1 justify-end">
+        <div className="hidden md:flex">
           <nav className="flex items-center gap-1 rounded-full border-foreground/10 bg-background/50 backdrop-blur px-2 py-1.5 border-2 opacity-85 bg-[#344256]/0">
             {links.map((l) => (
               <a
