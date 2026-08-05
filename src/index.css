@@ -22,7 +22,7 @@
     --primary-foreground: 44 33% 97%;
 
     /* Brand green accent from logo */
-    --accent: 152 70% 45%;            /* vivid green */
+    --accent: 150 92% 39%;            /* #08C165 */
     --accent-foreground: 0 0% 6%;
 
     --secondary: 44 20% 88%;
@@ -63,7 +63,7 @@
     --popover-foreground: 44 33% 95%;
     --primary: 230 90% 60%;
     --primary-foreground: 0 0% 6%;
-    --accent: 152 70% 50%;
+    --accent: 150 92% 45%;
     --accent-foreground: 0 0% 6%;
     --secondary: 0 0% 12%;
     --secondary-foreground: 44 33% 95%;
