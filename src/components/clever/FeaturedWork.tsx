@@ -2,11 +2,36 @@ import { Link } from "react-router-dom";
 import { useReveal } from "@/hooks/useReveal";
 import { projects, type Project } from "@/data/projects";
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const layout = [
+  { area: "one", cardClass: "aspect-[4/3] md:aspect-[2/1]" },
+  { area: "two", cardClass: "aspect-[4/3] md:aspect-square" },
+  { area: "three", cardClass: "aspect-[4/3] md:aspect-square" },
+  { area: "four", cardClass: "aspect-[4/3] md:aspect-square" },
+  { area: "five", cardClass: "aspect-[4/3] md:aspect-square" },
+  { area: "six", cardClass: "aspect-[4/3] md:aspect-[3/1]" },
+  { area: "seven", cardClass: "aspect-[4/3] md:aspect-square" },
+  { area: "eight", cardClass: "aspect-[4/3] md:aspect-square" },
+  { area: "nine", cardClass: "aspect-[4/3] md:aspect-square" },
+];
+
+const ProjectCard = ({
+  project,
+  area,
+  cardClass,
+}: {
+  project: Project;
+  area: string;
+  cardClass: string;
+}) => {
   const ref = useReveal<HTMLAnchorElement>();
   return (
-    <Link ref={ref} to={`/work/${project.slug}`} className="reveal group block">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
+    <Link
+      ref={ref}
+      to={`/work/${project.slug}`}
+      className="reveal group block"
+      style={{ gridArea: area }}
+    >
+      <div className={`relative ${cardClass} overflow-hidden rounded-2xl bg-muted`}>
         <img
           src={project.image}
           alt={project.title}
@@ -24,7 +49,6 @@ const ProjectCard = ({ project }: { project: Project }) => {
         </div>
       </div>
     </Link>
-
   );
 };
 
@@ -46,9 +70,14 @@ export const FeaturedWork = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16">
-          {projects.map((p) => (
-            <ProjectCard key={p.title} project={p} />
+        <div className="portfolio-bento">
+          {projects.map((p, i) => (
+            <ProjectCard
+              key={p.title}
+              project={p}
+              area={layout[i]?.area ?? `area-${i}`}
+              cardClass={layout[i]?.cardClass ?? "aspect-[4/3]"}
+            />
           ))}
         </div>
       </div>
