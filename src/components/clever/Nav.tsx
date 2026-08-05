@@ -54,7 +54,7 @@ export const Nav = () => {
         scrolled ? "fixed top-0 inset-x-0 z-50 transition-all duration-500 backdrop-blur-md bg-background/75 py-[18px] border border-slate-300" : "py-6 bg-transparent"
       )}
     >
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 flex items-center justify-between">
+      <div className="w-full px-6 lg:px-10 flex items-center justify-between">
         <Link
           to="/"
           onClick={(e) => {
