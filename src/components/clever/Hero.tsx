@@ -1,5 +1,5 @@
 import { useReveal } from "@/hooks/useReveal";
-import heroAsset from "@/assets/ads2-preview.jpg.asset.json";
+import heroAsset from "@/assets/hero-car.jpg.asset.json";
 
 const heroImage = heroAsset.url;
 
