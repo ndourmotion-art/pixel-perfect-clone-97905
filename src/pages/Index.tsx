@@ -7,6 +7,7 @@ import { Stats } from "@/components/clever/Stats";
 
 import { MadeWithPassion } from "@/components/clever/MadeWithPassion";
 import { ContactCTA } from "@/components/clever/ContactCTA";
+import { ContactBanner } from "@/components/clever/ContactBanner";
 import { Footer } from "@/components/clever/Footer";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
       
       <MadeWithPassion />
       <ContactCTA />
+      <ContactBanner />
       <Footer />
     </main>
   );
