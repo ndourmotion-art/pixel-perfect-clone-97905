@@ -76,7 +76,7 @@ export const Nav = () => {
                 key={l.href}
                 href={l.href}
                 onClick={(e) => handleClick(e, l.href)}
-                className="px-4 py-1.5 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors rounded-full hover:bg-foreground/5"
+                className="px-4 py-1.5 text-base font-semibold text-foreground hover:text-foreground transition-colors rounded-full hover:bg-foreground/5"
               >
                 {l.label}
               </a>
