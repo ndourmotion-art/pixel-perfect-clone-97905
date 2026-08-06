@@ -21,20 +21,19 @@ export const Hero = () => {
               For brands, organizations, and startups of all sizes.
             </div>
 
-            <h1 className="font-display uppercase tracking-tight font-bold leading-[0.9]">
-              <span className="block font-sans font-black text-background text-[clamp(2.2rem,7vw,6rem)]">
+            <h1 className="font-display uppercase tracking-tight leading-[0.9]">
+              <span className="block font-sans font-bold text-background text-[clamp(1.8rem,5.5vw,4.5rem)]">
                 Making
               </span>
-              <span className="block font-sans font-black text-background text-[clamp(2.2rem,7vw,6rem)]">
+              <span className="block font-sans font-bold text-background text-[clamp(1.8rem,5.5vw,4.5rem)]">
                 Things
               </span>
-              <span className="block font-sans font-black text-accent text-[clamp(2.2rem,7vw,6rem)]">
+              <span className="block font-sans font-bold text-accent text-[clamp(1.8rem,5.5vw,4.5rem)]">
                 Move
               </span>
-              <span className="block font-sans font-black text-accent text-[clamp(2.2rem,7vw,6rem)]">
+              <span className="block font-sans font-bold text-accent text-[clamp(1.8rem,5.5vw,4.5rem)]">
                 Forward
               </span>
-
             </h1>
 
             <div className="mt-8 md:mt-10 flex flex-wrap items-center gap-4">
