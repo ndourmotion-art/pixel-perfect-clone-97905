@@ -31,8 +31,7 @@ const ProjectPage = () => {
       <article>
         <header ref={heading} className="reveal pt-36 md:pt-44 pb-12 md:pb-16 mx-auto max-w-[1400px] px-6 lg:px-10">
           <Link to="/#work" className="text-sm text-foreground/60 hover:text-foreground">← All work</Link>
-          <div className="eyebrow text-foreground/60 mt-6 mb-4">( Case study )</div>
-          <h1 className="font-display uppercase text-display-lg text-xl md:text-2xl font-medium leading-[0.95]">
+          <h1 className="font-display uppercase text-4xl md:text-6xl lg:text-7xl font-black leading-[0.95] mt-6">
             {project.title}
           </h1>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground/70">
@@ -41,6 +40,7 @@ const ProjectPage = () => {
             ))}
           </div>
         </header>
+
 
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
           {project.link ? (
@@ -70,39 +70,24 @@ const ProjectPage = () => {
           )}
         </div>
 
-        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 py-20 md:py-28 grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-4 space-y-8">
-            <div>
-              <div className="eyebrow text-foreground/50 mb-2">Client</div>
-              <div className="text-lg">{project.client}</div>
-            </div>
-            <div>
-              <div className="eyebrow text-foreground/50 mb-2">Year</div>
-              <div className="text-lg">{project.year}</div>
-            </div>
-            <div>
-              <div className="eyebrow text-foreground/50 mb-2">Role</div>
-              <div className="text-lg">{project.role}</div>
-            </div>
-          </div>
-          <div className="md:col-span-8">
-            <div className="eyebrow text-foreground/50 mb-4">About</div>
-            <p className="text-xl md:text-2xl leading-relaxed text-foreground/80">{project.description}</p>
-          </div>
+        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 py-20 md:py-28 text-left">
+          <div className="eyebrow text-foreground/50 mb-4">About</div>
+          <p className="text-xl md:text-2xl leading-relaxed text-foreground/80 max-w-4xl">{project.description}</p>
         </section>
 
-        <section className="mx-auto max-w-[1100px] px-6 lg:px-10 pb-24 md:pb-36 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+        <section className="mx-auto max-w-[1600px] px-6 lg:px-10 pb-24 md:pb-36 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
           {project.gallery.map((src, i) => (
             <div key={i} className="rounded-2xl bg-muted overflow-hidden">
               <img
                 src={src}
                 alt={`${project.title} ${i + 1}`}
                 loading="lazy"
-                className="w-full h-full aspect-video object-cover transition-transform duration-700 hover:scale-[1.03]"
+                className="w-full h-full aspect-video object-cover"
               />
             </div>
           ))}
         </section>
+
 
 
         <section className="border-t border-foreground/10">
