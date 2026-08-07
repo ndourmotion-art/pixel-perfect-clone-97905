@@ -89,6 +89,30 @@ const ProjectPage = () => {
           ))}
         </section>
 
+        <section className="mx-auto max-w-[1600px] px-6 lg:px-10 pb-20 md:pb-28">
+          <div className="eyebrow text-foreground/50 mb-6">NOS RÉALISATIONS</div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-8">
+            {projects
+              .filter((p) => p.slug !== project.slug)
+              .map((p) => (
+                <Link key={p.slug} to={`/work/${p.slug}`} className="group block">
+                  <div className="relative aspect-video overflow-hidden rounded-xl bg-muted">
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-200" />
+                  </div>
+                  <h3 className="mt-3 font-display uppercase text-sm md:text-base leading-tight group-hover:text-primary transition-colors">
+                    {p.title}
+                  </h3>
+                  <p className="mt-1 text-xs text-foreground/60">{p.tags.join(" • ")}</p>
+                </Link>
+              ))}
+          </div>
+        </section>
 
 
         <section className="border-t border-foreground/10">
