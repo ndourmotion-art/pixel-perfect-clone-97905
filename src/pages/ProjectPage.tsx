@@ -70,10 +70,11 @@ const ProjectPage = () => {
           )}
         </div>
 
-        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 py-20 md:py-28 text-left">
-          <div className="eyebrow text-foreground/50 mb-4">About</div>
+        <section className="mx-auto max-w-[1400px] px-6 lg:px-10 pt-10 md:pt-12 pb-14 md:pb-20 text-left">
+          <div className="eyebrow text-foreground/50 mb-4">LE PROJET</div>
           <p className="text-xl md:text-2xl leading-relaxed text-foreground/80 max-w-4xl">{project.description}</p>
         </section>
+
 
         <section className="mx-auto max-w-[1600px] px-6 lg:px-10 pb-24 md:pb-36 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
           {project.gallery.map((src, i) => (
