@@ -27,7 +27,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "project-a",
-    title: "Project A",
+    title: "ADS Mobility",
     tags: ["Brand Identity", "Art Direction"],
     image: adsPreview.url,
     client: "Confidential",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   },
   {
     slug: "jet7x-doundeul",
-    title: "Jet7x — Doundeul s a katan",
+    title: "Jet7x \"Doundeul sa katan\"",
     tags: ["Publicité", "Motion"],
     image: jet7xPreview.url,
     link: "https://vimeo.com/1130287469?fl=pl&fe=sh",

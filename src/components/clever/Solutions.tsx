@@ -35,7 +35,7 @@ export const Solutions = () => {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <div ref={head} className="reveal max-w-3xl mb-16 md:mb-24">
           <div className="eyebrow text-foreground/60 mb-5">( Packs sur mesure )</div>
-          <h2 className="font-display uppercase text-display-lg text-5xl md:text-6xl font-sans font-medium">
+          <h2 className="font-display uppercase text-display-lg text-7xl font-sans font-medium">
             Solutions sur mesure
           </h2>
         </div>
