@@ -1,4 +1,8 @@
 import adsPreview from "@/assets/ads-preview.jpg.asset.json";
+import adsShot1 from "@/assets/ads-mobility-123249.png.asset.json";
+import adsShot2 from "@/assets/ads-mobility-123216.png.asset.json";
+import adsShot3 from "@/assets/ads-mobility-123316.png.asset.json";
+import adsShot4 from "@/assets/ads-mobility-123223.png.asset.json";
 import jet7xPreview from "@/assets/jet7x.jpg.asset.json";
 import championsPreview from "@/assets/les-champions.jpg.asset.json";
 import noelMadarPreview from "@/assets/noel-madar.jpg.asset.json";
@@ -28,17 +32,19 @@ export const projects: Project[] = [
   {
     slug: "project-a",
     title: "ADS Mobility",
-    tags: ["Brand Identity", "Art Direction"],
+    tags: ["Publicité", "Direction Artistique"],
     image: adsPreview.url,
-    client: "Confidential",
+    link: "https://vimeo.com/1205898492",
+    client: "ADS",
     year: "2025",
-    role: "Identity, Art Direction",
+    role: "Direction Artistique, Production",
     description:
-      "A complete brand system built around bold typography and a living color palette. From logo to motion guidelines, every detail is engineered to scale across digital and physical touchpoints.",
+      "Un film publicitaire pour ADS Mobility mettant en avant l'application de mobilité : calcul de trajet, cartes Xeweul et accès par QR code sur les autoroutes du Sénégal.",
     gallery: [
-      adsPreview.url,
-      "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+      adsShot1.url,
+      adsShot2.url,
+      adsShot3.url,
+      adsShot4.url,
     ],
   },
   {

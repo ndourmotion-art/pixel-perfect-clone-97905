@@ -91,10 +91,15 @@ const ProjectPage = () => {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[800px] px-6 lg:px-10 pb-24 md:pb-36 flex flex-col gap-6">
+        <section className="mx-auto max-w-[1100px] px-6 lg:px-10 pb-24 md:pb-36 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           {project.gallery.map((src, i) => (
             <div key={i} className="rounded-2xl bg-muted overflow-hidden">
-              <img src={src} alt={`${project.title} ${i + 1}`} loading="lazy" className="w-full h-auto object-contain" />
+              <img
+                src={src}
+                alt={`${project.title} ${i + 1}`}
+                loading="lazy"
+                className="w-full h-full aspect-video object-cover transition-transform duration-700 hover:scale-[1.03]"
+              />
             </div>
           ))}
         </section>
