@@ -71,7 +71,7 @@ const ProjectPage = () => {
         </div>
 
         <section className="mx-auto max-w-[1400px] px-6 lg:px-10 pt-10 md:pt-12 pb-14 md:pb-20 text-left">
-          <div className="eyebrow text-foreground/50 mb-4">LE PROJET</div>
+          <div className="eyebrow font-bold text-base md:text-lg text-foreground mb-4">LE PROJET</div>
           <p className="text-xl md:text-2xl leading-relaxed text-foreground/80 max-w-4xl">{project.description}</p>
         </section>
 
@@ -90,7 +90,11 @@ const ProjectPage = () => {
         </section>
 
         <section className="mx-auto max-w-[1600px] px-6 lg:px-10 pb-20 md:pb-28">
-          <div className="eyebrow text-foreground/50 mb-6">NOS RÉALISATIONS</div>
+          <div className="mb-6">
+            <span className="inline-block bg-foreground text-background font-bold text-sm md:text-base uppercase tracking-wide px-5 py-2 [clip-path:polygon(10px_0,100%_0,100%_calc(100%-10px),calc(100%-10px)_100%,0_100%,0_10px)]">
+              Autres projets
+            </span>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-8">
             {projects
               .filter((p) => p.slug !== project.slug)
