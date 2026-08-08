@@ -26,6 +26,7 @@ const ProjectPage = () => {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
+      <ScrollTextReveal />
       <Nav />
 
       <article>
