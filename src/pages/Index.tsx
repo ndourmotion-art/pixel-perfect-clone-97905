@@ -9,10 +9,12 @@ import { MadeWithPassion } from "@/components/clever/MadeWithPassion";
 import { ContactCTA } from "@/components/clever/ContactCTA";
 import { ContactBanner } from "@/components/clever/ContactBanner";
 import { Footer } from "@/components/clever/Footer";
+import { ScrollTextReveal } from "@/components/clever/ScrollTextReveal";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
+      <ScrollTextReveal />
       <Nav />
       <Hero />
       <FeaturedWork />

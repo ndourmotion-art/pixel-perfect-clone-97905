@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Nav } from "@/components/clever/Nav";
 import { Footer } from "@/components/clever/Footer";
 import { useReveal } from "@/hooks/useReveal";
+import { ScrollTextReveal } from "@/components/clever/ScrollTextReveal";
 import { getProject, projects } from "@/data/projects";
 
 const ProjectPage = () => {
@@ -26,6 +27,7 @@ const ProjectPage = () => {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
+      <ScrollTextReveal />
       <Nav />
 
       <article>
