@@ -22,7 +22,7 @@ const ProjectPage = () => {
     );
   }
 
-  const next = projects[(projects.findIndex((p) => p.slug === slug) + 1) % projects.length];
+  
 
   return (
     <main className="min-h-screen bg-background text-foreground">
